@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+  }
+
+  .user-details > div {
+    margin: 15px;
+    padding: 10px;
+  }
+  
+  h1, p {
+  text-decoration-style:solid;
+  }
+   

@@ -1,0 +1,37 @@
+
+<body><div>
+    <form [formGroup]="ngoregister" (ngSubmit)="regstration()">
+      <!-- class named "container" is assigned to div -->
+      <div class="container ">
+        <h1 >Register NGO</h1>
+        <div class="user-details form-group">
+          <div class="part-one">
+            <label for="password"><b>Password</b></label><br>
+            <input type="text" placeholder="Enter password" formControlName="password"
+              id="password" ng-required/>
+              <br>
+            <label for="username"><b> Username</b></label><br>
+            <input type="text" placeholder="Enter username" formControlName="username"
+              id="username" ng-required/>
+            <br>
+            <label for="text"><b>NGO emailId</b></label><br>
+            <input type="text" placeholder="Enter emailid" formControlName="nEmailid"
+              id="emailId" ng-required/>
+            <br>
+            <label for="address"><b>Address</b></label><br>
+            <input type="text" placeholder="Enter address" formControlName="nAddress"
+              id="address" ng-required/>
+            <br>
+            <label for="contactNumber"><b>ContactNumber</b></label><br>
+            <input type="text"
+              placeholder="Enter ContactNo" formControlName="nPhonenumber" id="" ng-required />
+              <br>
+            </div>
+            <br>
+        </div>
+        <button class="btn btn-info" type="submit">Register</button>&nbsp; &nbsp;
+        <button class="btn btn-info"type="reset">Reset</button>
+      </div>
+      </form>
+  </div>
+  </body>

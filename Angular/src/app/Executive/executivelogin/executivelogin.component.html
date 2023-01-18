@@ -1,0 +1,80 @@
+
+<!-- <div class="bk">
+    <div class="container text-center text-info">
+        <h2 class="headline">Executive Login</h2>
+        <div id="login-row" class="row justify-content-center align-items-center">
+        <div id="bk-column" class="col-md-3">
+          <div id="bk-box" class="col-md-12 p-6">
+        <form #loginform="ngForm" (ngSubmit)="loginexecutive()">
+            <small class="text-danger">{{msg}}</small>
+          <div class="form-group w-30">
+            <label for="username">Username:</label>
+            <input type="username" class="form-control" id="username" placeholder="Enter username" name="username" [(ngModel)]="admin.username" 
+            required  #username="ngModel" [class.is-invalid]="username.invalid && username.touched">
+            <small class="text-danger" [class.d-none]="username.valid || username.untouched">Username is required field</small>
+          </div>
+          <div class="form-group w-30">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" [(ngModel)]="admin.password" 
+             required #password="ngModel" [class.is-invalid]="password.invalid && password.touched">
+            <small class="text-danger" [class.d-none]="password.valid || password.untouched">Password is required field</small>
+          </div>
+      
+        
+          <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Remember me</label>
+          </div>
+          <small class="right" [routerLink]="['/executivehome']"></small>
+          <button type="submit" class="btn btn-info">Login</button>
+        </form>
+        </div>
+        </div>
+        </div>
+         </div>
+    </div> -->
+
+
+    <section class="vh-100" style="background-color: #6da181;">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card shadow-2-strong" style="border-radius: 1rem;">
+              <div class="card-body p-5 text-center">
+            <h3 class="mb-3">Executive Login</h3>
+                <form #loginform="ngForm" (ngSubmit)="loginexecutive()">
+                  <small class="text-danger">{{msg}}</small>
+                <div class="form-outline mb-4 text-dark">
+                  <label for="username">Username:</label>
+                  <input type="username" class="form-control" id="username" placeholder="Enter username" name="username" [(ngModel)]="admin.username" 
+                  required  #username="ngModel" [class.is-invalid]="username.invalid && username.touched">
+                  <small class="text-danger" [class.d-none]="username.valid || username.untouched">Username is required field</small>
+                </div>
+    
+                <div class="form-outline mb-4 text-dark">
+                  <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" [(ngModel)]="admin.password" 
+             required #password="ngModel" [class.is-invalid]="password.invalid && password.touched">
+            <small class="text-danger" [class.d-none]="password.valid || password.untouched">Password is required field</small>
+                </div>
+    
+                <!-- Checkbox
+                <div class="form-check d-flex justify-content-start mb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                  <label class="form-check-label" for="form1Example3"> Remember password </label>
+                </div> -->
+                <small class="right" [routerLink]="['/executivehome']"></small>
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+    
+                <!-- <hr class="my-4">
+    
+                <button class="btn btn-lg btn-block btn-primary" style="background-color: #dd4b39;"
+                  type="submit"><i class="fab fa-google me-2"></i> Sign in with google</button>
+                <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;"
+                  type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with facebook</button> -->
+    </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

@@ -1,0 +1,26 @@
+.bg-image-vertical {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+    
+    }
+
+     #bk .container #login-row #login-column #login-box {
+    margin-top: 50px;
+    max-width: 600px;
+    height: 320px;
+    border: 1px solid #0c0101;
+   
+    background-color: #b39999;
+  }#bk .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+  }
+
+    @media (min-width: 1025px) {
+    .h-custom-2 {
+    height: 100%;
+    }
+    }
+    

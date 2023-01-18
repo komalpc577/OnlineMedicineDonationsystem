@@ -1,0 +1,31 @@
+<body>
+    <div class="container text-center" >
+        <button class="btn btn-info">view All Medicine</button>
+        <button class="btn btn-danger navbar-btn Logout" routerLink="/userhome" >Logout</button>
+    <div class="text-center">
+        <table class = "table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">medicineName</th>
+                    <th scope="col">price</th>
+                    <th scope="col">mfdDate</th>
+                    <th scope="col">expDate</th>
+                    <th scope="col">quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of MedicineDetails">
+                    <th scope="row">{{employee.id}}</th>
+                    <td>{{employee.medicineName}}</td>
+                    <td>{{employee.price}}</td>
+                    <td>{{employee.mfdDate}}</td>
+                    <td>{{employee.expDate}}</td>
+                    <td>{{employee.quantity}}</td>
+                </tr>
+            </tbody>
+        </table>
+       
+    </div>
+    </div>
+    </body>

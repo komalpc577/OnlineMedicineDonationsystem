@@ -1,0 +1,31 @@
+<body>
+<div class="container" >
+    <button class="btn btn-info">View NGO</button>
+    <div class="text-center">
+    <button class="btn btn-danger navbar-btn Logout" routerLink="/adminhome" >Logout</button>
+
+    <table class = "table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">password</th>
+                <th scope="col">username</th>
+                <th scope="col">nEmailid</th>
+                <th scope="col">nAddress</th>
+                <th scope="col">nPhonenumber</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of NGODetails">
+                <th scope="row">{{employee.id}}</th>
+                <td>{{employee.password}}</td>
+                <td>{{employee.username}}</td>
+                <td>{{employee.nEmailid}}</td>
+                <td>{{employee.nAddress}}</td>
+                <td>{{employee.nPhonenumber}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</body>

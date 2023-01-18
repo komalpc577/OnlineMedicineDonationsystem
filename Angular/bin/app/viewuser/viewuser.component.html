@@ -1,0 +1,28 @@
+<body><div class="container text-center"  >
+    <button class="btn btn-info">view User</button>
+<div class="text-center"><button class="btn btn-danger navbar-btn Logout" routerLink="/adminhome" >Logout</button>
+    <table class = "table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">user_id</th>
+                <th scope="col">username</th>
+                <th scope="col">emailId</th>
+                <th scope="col">address</th>
+                <th scope="col">contactNumber</th>
+                <th scope="col">password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of UserDetails">
+                <th scope="row">{{employee.user_id}}</th>
+                <td>{{employee.username}}</td>
+                <td>{{employee.emailId}}</td>
+                <td>{{employee.address}}</td>
+                <td>{{employee.contactNumber}}</td>
+                <td>{{employee.password}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</body>

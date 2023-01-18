@@ -1,0 +1,26 @@
+.nav-link{
+    margin-left: 10px;
+    
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(167, 222, 230);
+  }
+/* .container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    background-color: beige;
+} */
+
+.Logout{
+    /* justify-content: end; */
+    float: right;
+    margin-left: 40rem;
+
+}
+/* .navlist{
+    background-color: lightgreen;
+} */

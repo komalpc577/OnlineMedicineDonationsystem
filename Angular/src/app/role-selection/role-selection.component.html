@@ -1,0 +1,55 @@
+<body>
+<div class="container" >
+     <div class="img">
+    <img class="bg-img" src="../../assets/bground.png" alt="">
+
+ <form action="" [formGroup]="selectionform" class="text-center " style="margin-top: -450px;">
+      <!-- <h1>Online Medicine System</h1> -->
+      <h2 class="text-danger p-2">Online Medicine Donation  System</h2>
+        <label><input type="radio"  name="role" formControlName="role" value="admin" class="text-info fontsize" checked> Admin</label><br>
+        <br>
+      <label><input type="radio" name="role" formControlName="role" value="user" > User</label><br>
+      <br>
+      <label><input type="radio" name="role" formControlName="role" value="ngo" > NGO</label><br>
+      <br>
+      <label><input type="radio" name="role" formControlName="role" value="executive" > Executive</label><br><br>
+      <br>
+
+      <button class="bg-success text-white" (click)="gotologin()">Click to Login</button>
+ </form>
+ </div>
+  </div>
+  <!-- <div class="img">
+    <img class="bg-img" src="../../assets/bground.png" alt="">
+  </div> -->
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>

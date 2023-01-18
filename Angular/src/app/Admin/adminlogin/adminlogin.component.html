@@ -1,0 +1,47 @@
+
+
+  <!-- <div class="bk">
+    <div class="container text-center text-dark">
+      <div id="bk-row" class="row justify-content-center align-items-center">
+        <div id="bk-column" class="col-md-4">
+            <div id="bk-box" class="col-md-12"> -->
+              <section class="vh-100" style="background-color: #bd9169;">
+                <div class="container py-5 h-100">
+                  <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                      <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+        <h2 class="headline">Admin Login</h2>
+        <form #loginform="ngForm" (ngSubmit)="loginadmin()">
+            <small class="text-danger">{{msg}}</small>
+          <div class="form-group">
+            <label for="username"><b>Username</b>:</label>
+            <input type="username" class="form-control" id="username" placeholder="Enter username" name="username" [(ngModel)]="admin.username" 
+            required  #username="ngModel" [class.is-invalid]="username.invalid && username.touched">
+            <small class="text-danger" [class.d-none]="username.valid || username.untouched">Username is required field</small>
+          </div>
+          <div class="form-group ">
+            <label for="password"><b>Password</b>:</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" [(ngModel)]="admin.password" 
+             required #password="ngModel" [class.is-invalid]="password.invalid && password.touched">
+            <small class="text-danger" [class.d-none]="password.valid || password.untouched">Password is required field</small>
+          </div>
+       <!-- <div *ngIf="password.errors && (password.invalid && password.touched)" pattern="^[a-z][A-Z][0-9]{5,10}$" >
+                <small class="text-danger" *ngIf="password.errors.required">Password is required field</small>
+                <small class="text-danger" *ngIf="password.errors.pattern">Enter valid Password must contain alpha,numeric and special character</small>
+    
+        </div> -->
+      
+        
+          <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Remember me</label>
+          </div>
+          <small class="right" [routerLink]="['/adminhome']"></small>
+          <button type="submit" class="btn btn-info">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>

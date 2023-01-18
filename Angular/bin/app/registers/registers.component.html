@@ -1,0 +1,34 @@
+<body><div>
+
+    <form [formGroup]="register" (ngSubmit)="regstration()">
+      <!-- class named "container" is assigned to div -->
+      <div class="container ">
+        <h1 >Register User</h1>
+        <div class="user-details">
+          <div class="part-one">
+            <label for="username"><b> Username</b></label><br>
+            <input type="text" placeholder="Enter username" formControlName="username"
+              id="username" ng-required/>
+            <br>
+            <label for="emailId"><b>EmailId</b></label><br>
+            <input type="text" placeholder="Enter emailid" formControlName="emailId"
+              id="emailId" ng-required/>
+            <br>
+            <label for="address"><b>Address</b></label><br>
+            <input type="text" placeholder="Enter address" formControlName="address"
+              id="address" ng-required/>
+            <br>
+            <label for="contactNumber"><b>ContactNumber</b></label><br>
+            <input type="text" placeholder="Enter ContactNo" formControlName="contactNumber" id="ContactNumber" ng-required />
+              <br>
+              <label for="password"><b> Password</b></label><br>
+              <input type="password" placeholder="Enter password" formControlName="password"
+                id="password" ng-required/>
+            </div>
+        </div>
+        <button class="btn btn-info" type="submit">Register</button>&nbsp; &nbsp;
+        <button class="btn btn-info"type="reset">Reset</button>
+      </div>
+      </form>
+  </div>
+  </body>
